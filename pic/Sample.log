@@ -1,0 +1,504 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.2.6)  6 FEB 2011 20:27
+entering extended mode
+**Sample.tex
+(C:\Info\MathPhys\Дефекты\LaTex\Sample.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("F:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("F:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+Package: pstricks 2010/09/18 v0.47 LaTeX wrapper for `PSTricks' (RN,HV)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pstricks.tex"
+("F:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count88
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))))
+("F:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex"
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count89
+\pstFP@xia=\count90
+\pstFP@xib=\count91
+\pstFP@xfa=\count92
+\pstFP@xfb=\count93
+\pstFP@rega=\count94
+\pstFP@regb=\count95
+\pstFP@regs=\count96
+\pstFP@times=\count97
+)
+\psLoopIndex=\count98
+
+`PSTricks' v2.13  <2010/11/01> (tvz)
+\pst@dima=\dimen103
+\pst@dimb=\dimen104
+\pst@dimc=\dimen105
+\pst@dimd=\dimen106
+\pst@dimg=\dimen107
+\pst@dimh=\dimen108
+\pst@dimm=\dimen109
+\pst@dimn=\dimen110
+\pst@dimo=\dimen111
+\pst@dimp=\dimen112
+\pst@hbox=\box26
+\pst@boxg=\box27
+\pst@cnta=\count99
+\pst@cntb=\count100
+\pst@cntc=\count101
+\pst@cntd=\count102
+\pst@cntg=\count103
+\pst@cnth=\count104
+\pst@cntm=\count105
+\pst@cntn=\count106
+\pst@cnto=\count107
+\pst@cntp=\count108
+\@zero=\count109
+\pst@toks=\toks16
+("F:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pstricks.con")
+\psunit=\dimen113
+\psxunit=\dimen114
+\psyunit=\dimen115
+\pst@C@@rType=\count110
+\pslinewidth=\dimen116
+\psk@startLW=\dimen117
+\psk@endLW=\dimen118
+\pst@customdefs=\toks17
+\pslinearc=\dimen119
+\pst@symbolStep=\dimen120
+\pst@symbolWidth=\dimen121
+\everypsbox=\toks18
+\psframesep=\dimen122
+\pslabelsep=\dimen123
+\pst@shift=\dimen124
+\theoverlaybox=\box28
+)
+File: pstricks.tex 2010/11/01 v2.13 `PSTricks' (tvz,hv)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex")
+File: pst-fp.tex 2010/11/01 v2.13 `PST-fp' (hv)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("F:\Program Files\MiKTeX 2.9\tex\latex\pst-node\pst-node.sty"
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-node\pst-node.tex"
+ v1.14, 2010/12/28
+\psrow=\count111
+\pscol=\count112
+\psmatrixcnt=\count113
+\psrowsep=\skip43
+\pscolsep=\skip44
+\pst@args=\count114
+\num@pts=\count115
+\pst@argcnt=\count116
+)
+File: pst-node.tex 2010/12/28 1.14 `pst-node' (tvz)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\pst-tree\pst-tree.sty"
+Package: pst-tree 2009/01/25 package wrapper for pst-tree.tex
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-tree\pst-tree.tex"
+ v1.11, 2009/09/17(tvz,dg,hv)
+\pstree@rootbox=\box29
+\pstree@box=\box30
+\psnodecnt=\count117
+\pstreelevel=\count118
+\pstreecnt=\count119
+\pstree@cnt=\count120
+\pstree@stop=\count121
+)
+File: pst-tree.tex 2009/09/17 1.11 `pst-tree' (tvz,hv)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\pst-plot\pst-plot.sty"
+Package: pst-plot 2010/01/22 package wrapper for pst-plot.tex
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-plot\pst-plot.tex"
+("F:\Program Files\MiKTeX 2.9\tex\generic\multido\multido.tex"
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count122
+\multidocount=\count123
+\multido@stuff=\toks19
+)  v1.26, 2011/01/19 (tvz,hv)
+\pstRadUnit=\dimen125
+\pstRadUnitInv=\dimen126
+\pst@linecnt=\count124
+\psk@subticksize=\dimen127
+\pst@xticksizeA=\dimen128
+\pst@xticksizeB=\dimen129
+\pst@xticksizeC=\dimen130
+\pst@yticksizeA=\dimen131
+\pst@yticksizeB=\dimen132
+\pst@yticksizeC=\dimen133
+\@digitcounter=\count125
+\psk@llx=\dimen134
+\psk@lly=\dimen135
+\psk@urx=\dimen136
+\psk@ury=\dimen137
+\pst@xunit=\dimen138
+\pst@yunit=\dimen139
+)
+File: pst-plot.tex 2011/01/19 1.26 `pst-plot' (tvz,hv)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+)
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\pst-pdf\pst-pdf.sty"
+Package: pst-pdf 2008/10/09 v1.1v PS graphics for pdfLaTeX (RN,HjG)
+\c@pspicture=\count126
+Package pst-pdf Info: MODE: 0 (dvi -- extraction mode) on input line 102.
+
+No auxiliary output files.
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\preview\preview.sty"
+Package: preview 2010/02/14 11.86 (AUCTeX/preview-latex)
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\preview\prtightpage.def"
+\PreviewBorder=\dimen142
+)
+\pr@snippet=\count127
+\pr@box=\box31
+\pr@output=\toks20
+)
+\pdfoutput=\count128
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
+\Gread@gobject=\count129
+))
+("F:\Program Files\MiKTeX 2.9\tex\latex\pst-text\pst-text.sty"
+Package: pst-text 2006/01/01 package wrapper for pst-text.tex (hv)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-text\pst-text.tex"
+ v1.00, 2006/11/05(tvz,hv))
+File: pst-text.tex 2006/11/05 1.00 `pst-text' (tvz)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\pstricks-add\pstricks-add.sty"
+Package: pstricks-add 2010/02/11 v. 0.14 package wrapper for pstricks-add.tex (
+hv)
+
+("F:\Program Files\MiKTeX 2.9\tex\generic\pstricks-add\pstricks-add.tex"
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-3d\pst-3d.tex"
+`PST-3d' v1.11, 2010/02/14 (tvz))
+("F:\Program Files\MiKTeX 2.9\tex\generic\pst-math\pst-math.tex"
+`pst-math' v0.62 , (CJ,hv)) `pstricks-add' v3.49, 2011/01/18 (dr,hv)
+\pshooklength=\dimen143
+\pshookwidth=\dimen144
+\pst@cntC=\count130
+\chart@ColorIndex=\dimen145
+\chart@ColorStep=\dimen146
+\pst@chartHeight=\dimen147
+\pst@chartStackDepth=\dimen148
+\pst@chartStackWidth=\dimen149
+\chart@Toggle=\count131
+\psVectorCtr=\count132
+)
+File: pstricks-add.tex 2011/01/18 v3.49 `PSTricks-add' (hv)
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\bez123\bez123.sty"
+Package: bez123 2009/09/02 v1.1b Bezier curves
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\bez123\multiply.sty"
+Package: multiply 1998/10/14 v1.1 Multiplication of lengths without overflow
+\n@fl@wa=\skip45
+\n@fl@wb=\skip46
+\n@fl@wc=\skip47
+)
+
+LaTeX Warning: You have requested, on input line 27, version
+               `2009/09/02' of package multiply,
+               but only version
+               `1998/10/14 v1.1 Multiplication of lengths without overflow'
+               is available.
+
+\@wxc=\skip48
+\@wyc=\skip49
+\@ww=\skip50
+\@wwa=\skip51
+\@wwb=\skip52
+\@wwo=\skip53
+\@wwi=\skip54
+\c@@pntscale=\count133
+\c@weightscale=\count134
+\botscale=\skip55
+) ("F:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count135
+\calc@Bcount=\count136
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count137
+\calc@Cskip=\skip58
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\curves\curves.sty"
+Package: curves 2009/08/31 1.53 Curves for LaTeX picture environment
+\;sc=\count138
+\;scp=\count139
+\;t=\count140
+\;cc=\count141
+\;cnd=\count142
+\;mcnd=\count143
+\;np=\count144
+\;overhang=\count145
+\;pbs=\count146
+\;pns=\count147
+\;psc=\count148
+\;rc=\count149
+\;rtc=\count150
+\;tc=\count151
+\csdiameter=\skip59
+\curvelength=\skip60
+\overhang=\skip61
+\;x=\skip62
+\;dx=\skip63
+\;ddx=\skip64
+\;y=\skip65
+\;dy=\skip66
+\;ddy=\skip67
+\;pl=\skip68
+\;ucd=\skip69
+\;csbox=\box32
+\;pt=\box33
+\;strline=\toks21
+\m;ssingcoord=\toks22
+\;negdash=\toks23
+\;oddcoord=\toks24
+\;wc=\count152
+\;X=\skip70
+\;Y=\skip71
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\ebezier\ebezier.sty"
+Package: ebezier 2005/03/01 v4
+\c@@cnta=\count153
+\c@@cntb=\count154
+\c@@cntc=\count155
+\c@@cntd=\count156
+\@Zf=\skip72
+\@Zg=\skip73
+\@Zh=\skip74
+\@Zi=\skip75
+\@Zj=\skip76
+\magicnum=\skip77
+\eps=\skip78
+\PathLength=\skip79
+\@pt=\box34
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\eepic\epic.sty"
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count157
+\d@lta=\count158
+\@delta=\dimen152
+\@@delta=\dimen153
+\@gridcnt=\count159
+\@joinkind=\count160
+\@dotgap=\dimen154
+\@ddotgap=\dimen155
+\@x@diff=\count161
+\@y@diff=\count162
+\x@diff=\dimen156
+\y@diff=\dimen157
+\@dotbox=\box35
+\num@segments=\count163
+\num@segmentsi=\count164
+\@datafile=\read1
+) ("F:\Program Files\MiKTeX 2.9\tex\latex\eepic\eepic.sty"
+Extension to Epic and LaTeX. Version 1.1e - Released Dec 21, 1999
+\@gphlinewidth=\count165
+\@eepictcnt=\count166
+\@tempdimc=\dimen158
+\maxovaldiam=\dimen159
+\@filltype=\box36
+) ("F:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count167
+\rotFPtop=\skip80
+\rotFPbot=\skip81
+\rot@float@box=\box37
+\rot@mess@toks=\toks25
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip82
+\LTright=\skip83
+\LTpre=\skip84
+\LTpost=\skip85
+\LTchunksize=\count168
+\LTcapwidth=\dimen160
+\LT@head=\box38
+\LT@firsthead=\box39
+\LT@foot=\box40
+\LT@lastfoot=\box41
+\LT@cols=\count169
+\LT@rows=\count170
+\c@LT@tables=\count171
+\c@LT@chunks=\count172
+\LT@p@ftn=\toks27
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip86
+
+For additional information on amsmath, use the `?' option.
+("F:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("F:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks28
+\ex@=\dimen161
+))
+("F:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen162
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count173
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count174
+\leftroot@=\count175
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count176
+\DOTSCASE@=\count177
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box42
+\strutbox@=\box43
+\big@size=\dimen163
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count178
+\c@MaxMatrixCols=\count179
+\dotsspace@=\muskip10
+\c@parentequation=\count180
+\dspbrk@lvl=\count181
+\tag@help=\toks29
+\row@=\count182
+\column@=\count183
+\maxfields@=\count184
+\andhelp@=\toks30
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
+\@envbody=\toks31
+\multlinegap=\skip87
+\multlinetaggap=\skip88
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("F:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+(C:\Info\MathPhys\Дефекты\LaTex\Sample.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+Preview: Fontsize 12pt
+ ) 
+Here is how much of TeX's memory you used:
+ 6267 strings out of 494020
+ 85824 string characters out of 3146465
+ 220103 words of memory out of 3000000
+ 9465 multiletter control sequences out of 15000+200000
+ 6688 words of font info for 24 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 37i,5n,51p,563b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+No pages of output.
