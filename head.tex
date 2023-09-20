@@ -1,0 +1,147 @@
+\ifx\pdfoutput\undefined
+% we are running LaTeX, not pdflatex
+\usepackage{graphicx}
+\else
+% we are running pdflatex, so convert .eps files to .pdf
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\fi
+\graphicspath{{pic/}}%путь к рисункам
+%\include{head}
+%%\usepackage[pdftex]{graphicx}
+\usepackage {pscyr}
+\usepackage[cp1251]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{cmap}
+\usepackage{amsfonts,longtable}
+%\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb}
+\usepackage{wrapfig}
+%\usefont{T2A}{ftm}{m}{sl}
+\renewcommand{\rmdefault}{ftm}
+
+%Вертикальные промежутки между абзацами задаются в Latex при помощи следующих команд:
+%\smallskip, \medskip и \bigskip.
+
+%Социальная сеть преподавателей и студентов.\\[5mm]
+%Блог о системе верстки в Latex.
+
+
+
+%
+%%\usepackage{euscript}
+%%\usepackage{pstricks}
+%%\usepackage{pst-node}
+%%\usepackage{pst-tree}
+%%\usepackage{pst-plot}
+%%\usepackage{graphicx}
+%%\usepackage{pst-pdf,pst-text,pstricks-add}
+%
+\raggedbottom
+\pagestyle{plain}
+\oddsidemargin=-1.2cm
+\textwidth=18.5cm
+\columnsep=0.8cm
+\topmargin=-2cm
+\textheight=26cm
+%\headsep 
+%\makeindex
+%
+%%\mathit{•} - наклонные греческие буквы.
+%
+%%\usepackage{pxfonts}%переопределяет также и x,y,z...
+%%\usepackage{txfonts} %одинаковые наборы с разной гарнитурой
+%%\usepackage{mathptm} тоже переопеделяет.
+%\usepackage{pifont}	% тут надо для каждой буквы опр.команду.
+%% файл psyr.tfm скопировать куда просят, и в админке нажать две кнопки.
+%%\DeclareSymbolFont{greek}{z}{y}{x}{w}{v}
+%\DeclareSymbolFont{greek}{U}{psy}{m}{n}
+%\DeclareSymbolFontAlphabet{\gr}{greek}
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\large\bfseries}}                              
+%\renewcommand{\@begintheorem}[2]{\vspace{-1.5mm}\begin{trivlist}
+%        \item[\hspace{\labelsep}{\hbox to 5.2mm{}\bf #1\ #2.}]\em}
+%\renewcommand{\@opargbegintheorem}[3]{\vspace{-1.5mm}\begin{trivlist}
+%        \item[\hspace{\labelsep}{\hbox to 5.2mm{}\bf #1\ #2\hfil\ (#3).\hfil}]\em}
+%\renewcommand{\@endtheorem}{\end{trivlist}\vspace{-1.5mm}\par}                                  
+\makeatother
+
+\usepackage{ntheorem}
+
+\theoremstyle{plain}
+\theoremheaderfont{\large\itshape} 
+\theorembodyfont{\normalfont}
+\theoremseparator{}
+\theoremindent0cm
+\theoremnumbering{arabic}
+\theoremsymbol{.}
+\newtheorem{dft}{Определение}[section]
+
+\theoremstyle{plain}
+\theoremheaderfont{\large\sc}
+\theorembodyfont{\normalfont}
+\theoremseparator{}
+\theoremindent0cm
+\theoremnumbering{arabic}
+\theoremsymbol{.}
+\newtheorem{trm}{Теорема}[section]
+
+\theoremheaderfont{\normalfont\sc} 
+\theorembodyfont{\upshape}
+\theoremstyle{nonumberplain}
+\theoremseparator{.}
+\theoremsymbol{\rule{1ex}{1ex}}
+\newtheorem{prf}{Доказательство}
+
+\theoremstyle{change}
+\theorembodyfont{\upshape}
+\theoremsymbol{\ensuremath{\ast}}
+\theoremseparator{.}
+\newtheorem{exe}{Пример}
+
+\newcommand{\beq}{\begin{equation}\begin{gathered}}
+\newcommand{\beqn}{\begin{equation}\begin{gathered} \nonumber }
+\newcommand{\eeq}{\end{gathered}\end{equation}}
+
+
+\newcommand{\bdft}{\begin{dft}}
+\newcommand{\edft}{\end{dft}}
+
+\newcommand{\bexe}{\begin{exe}}
+\newcommand{\eexe}{\end{exe}}
+
+\newcommand{\btrm}{\begin{trm}}
+\newcommand{\etrm}{\end{trm}}
+
+\newcommand{\bprf}{\begin{prf}}
+\newcommand{\eprf}{\end{prf}}
+
+
+\newcommand{\pal}{\partial}
+\newcommand{\my}{\mu}
+
+\newcommand{\hx}{\hspace{1ex}}
+\newcommand{\hxx}{\hspace{2ex}}
+\newcommand{\hxxx}{\hspace{3ex}}
+
+
+\newcommand{\bfr}{\mathbf{r}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfn}{\mathbf{n}}
+\newcommand{\bfm}{\mathbf{m}}
+\newcommand{\bfi}{\mathbf{i}}
+\newcommand{\bfj}{\mathbf{j}}
+\newcommand{\bfk}{\mathbf{k}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfx}{\mathbf{x}}
+
+
+\author{Кафедра Радиофизики.}
+\title{Конспект лекций: Теория упругости и пластичности кристаллов. \\ Чать 1. Кинеманика.\\Направление подготовки: микро- и наноэлектроника.\\ Смежные дисциплины: наномеханика, аккустооптика, физика твердото тела. \\ Куцевол Андрей Александрович. КМ-07-1. 8й семестр.}
+\date{2011}

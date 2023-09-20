@@ -1,0 +1,669 @@
+\documentclass[a4paper,11pt,twocolumn,oneside]{book}
+
+\include{head}
+
+\begin{document}
+
+
+\subsection{Определение кристаллической решетки.}
+
+В параграфе (...) мы определили условия для изометричности отображения $ u $:
+\beq
+\frac{\partial \my^{k'} }{\partial \my^{i} }(p) \frac{\partial \my^{l'} }{\partial \my^{j} }(p)
+\mathtt{g}_{kl}(u(p)) = \mathtt{g}_{ij}(p).
+\eeq
+
+Если пространство Евклидово то
+\beq \label{lat_eucl_metr}
+\frac{\partial x^{k'} }{\partial x^{i} }(p) \frac{\partial x^{l'} }{\partial x^{j} }(p)
+\delta_{kl} = \delta_{ij}.
+\eeq
+где $ x^{k'} = x^{k} \circ u $.
+
+Очивидно производная по $ x^{m} $ от (\ref{lat_eucl_metr }) будет равна нулю:
+(зачем брать производную от метрического тензора мы подробнее рассмотрим в параграфе (...) )
+
+\beq \label{ lattice_2_1_7 }
+\frac{\partial }{\partial x^{m} } \frac{\partial x^{k'} }{\partial x^{i} }(p)
+\frac{\partial x^{l'} }{\partial x^{j} }(p) \delta_{kl} = \frac{\partial }{\partial x^{m} } \delta_{ij} \Leftrightarrow \\
+\left(
+\frac{\partial^{2}x^{k'} }{\partial x^{m} \partial x^{i} }(p)
+\frac{\partial x^{l'}}{\partial x^{j} }(p) +
+\frac{\partial x^{k'} }{\partial x^{i} }(p)
+\frac{\partial^{2} x^{l'} }{\partial x^{m} \partial x^{j} }(p)
+\right) \delta_{kl} = 0
+\eeq
+
+Циклическая перестановка индексов $ i,j,m $ дает:
+\beq \label{ lattice_2_1_8 }
+\left( \frac{\partial^{2} u^{k'} }{\partial u^{i} \partial u^{m} }(p)\frac{\partial u^{i'} }{\partial u^{j} }(p) +
+\frac{\partial u^{k'} }{\partial u^{m} }(p) \frac{\partial^{2} u^{i'} }{\partial u^{i} \partial^{j} }(p)
+ \right)
+ \delta_{kl} = 0
+\eeq
+
+\beq \label{ lattice_2_1_9 }
+\left( \frac{\partial^{2} u^{k'} }{\partial u^{j} \partial u^{i} }(p)\frac{\partial u^{i'} }{\partial u^{j} }(p) +
+\frac{\partial u^{k'} }{\partial u^{i} }(p) \frac{\partial^{2} u^{i'} }{\partial u^{j} \partial^{m} }(p)
+ \right)
+ \delta_{kl} = 0
+\eeq
+
+Складывая (\ref{ lattice_2_1_8 }) с (\ref{ lattice_2_1_7 }) и вычитая (\ref{ lattice_2_1_9 }) найдем:
+
+\beq
+\frac{ \partial^{2} u^{'k} }{\partial u^{m} \partial u^{i} }(p)
+\frac{\partial u^{i'} }{\partial u^{j} }(p) \delta_{kl} = 0.
+\eeq
+умножая последнее выражение на $ \frac{\partial u^{j} }{\partial u^{r'} } $ и суммируя по $ j $ получим:
+\beq
+\frac{\partial^{2} u^{r'} }{\partial u^{i} \partial u^{m} }(p) = 0.
+\eeq
+Это выражение верно для любых $ 1 \leq i,m,r \leq n $ и для любых $ p $. Интегрирование дает:
+\beq
+f^{r}_{i} \doteqdot \frac{\partial u^{r'} }{\partial u^{i} }
+= \mathrm{constant };
+\eeq
+После второго интегрирования, окончательно получим:
+\beq \label{ lat_2_1_12 }
+u^{r} \circ \phi = u^{r'} = f^{r}_{i}u^{i} + s^{r},
+\eeq
+
+где $ s^{r} $ является константой и $ f^{r}_{i} $ является компонентой $ (r,i) $ постоянной матрицы $ F $.
+
+Уравнение (\ref{lat_eucl_metr}) может быть записано в матричном виде:
+\beq \label{ lat_2_1_13 }
+\left.^{t} \mathbf{F} \right. \mathbf{F} = \mathbf{I}_{n},
+\eeq
+Отсюда видно, что $ \mathbf{F} $ является ортогональной матрицей.
+
+В другой координатной системе $ x = (x^{1};...;x^{n}) $, определенной преобразованием $ x = \mathbf{B}u, \mathbf{B} \in GL_{n}(\mathbb{R}) $, матричное уравнение (\ref{lat_eucl_metr}) запишется:
+\beq
+\left.^{t} \mathbf{F} \right. G \mathbf{F} = \mathbf{G},
+\eeq
+где $ \mathbf{G} $ матрица представляющая метрический тензор в координатной системе $ x; $ $ \mathbf{F} $ все еще является постоянной матрицей с определителем $ \pm 1 $, но уже не является ортогональной.
+
+Уравнение (\ref{ lat_2_1_12 }) в матричном виде запишется:
+\beq \label{ lat_2_1_15 }
+u' = \mathbf{F}u + s,
+\eeq
+где $ s \in \mathbb{R}^{n} $ является константой. $ \mathbf{F} $ и $ s $ называются соответственно \textit{матричной частью} и \textit{трансляционной частью} изометрии . Множество всех Евклидовых изометрий называется Евклидовой группой изометрии.
+
+Соотношение (\ref{ lat_2_1_15 }) часто записывается в развернутом виде, где матричная и трансляционная части объединяются в одну матрицу большего размера:
+\beq
+\left(
+\begin{array}{c}
+u^{1'} \\
+\vdots \\
+u^{n'} \\
+\hline
+1
+\end{array}
+\right) =
+\left( 
+\begin{array}{ccc|c }
+f^{1}_{1} & \cdots & f^{1}_{n} & s^{1}   \\
+\vdots    & \ddots & \vdots    & \vdots  \\
+f^{n}_{1} & \cdots & f^{n}_{n} & s^{n}   \\
+\hline
+0         & \cdots & 0         & 1
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+u^{1} \\
+\vdots \\
+u^{n} \\
+\hline
+1
+\end{array}
+\right)
+\eeq
+
+Такое представление является практичным, но имеет тот недостаток, что вектор имеет дополнительную компоненту, что не имеет физического смысла. Другой способ совместного представления трансляционной и матричой частей, без дополнительного измерения, состоит в том, что используется техника дифференцирования; уравнение (\ref{ lat_2_1_12 }) может быть записано в виде:
+\beq
+u^{i'} = f^{i}_{j}u^{j} + s^{i} = (f^{i}_{j}u^{j} + s^{i}\partial_{i}u^{j} ) = ( f^{i}_{j} + s^{i} \partial_{i} )u^{j}.
+\eeq
+или в матричной записи:
+\beq
+\left(
+\begin{array}{c}
+u^{1'} \\
+\vdots \\
+u^{n'}
+\end{array}
+\right) = \\
+\left[
+\left(
+\begin{array}{ccc}
+f^{1}_{1} & \cdots & f^{1}_{n} \\
+\vdots    & \ddots & \vdots \\
+f^{n}_{1} & \cdots & f^{n}_{1}
+\end{array}
+\right)
++
+\left(
+\begin{array}{ccc}
+s^{1} \partial_{1} & & 0 \\
+& \ddots & \\
+0 & & s^{n} \partial_{n}
+\end{array}
+\right)
+\right]
+\eeq
+
+Таким образом изометрчные преобразования Евклидового многообразия можно записать в виде:
+\beq
+u' = \bar{\mathbf{F}}u,
+\eeq
+где
+\beq
+\bar{F} \doteqdot F + S. 
+\eeq
+
+В случае, когда $ F = I_{n} $, изометрия соответствует чистой трансляции и можно записать $ \bar{S} \doteqdot I_{n} + S $. Множество чистых трансляций обозначается $ \mathrm{Trans(\mathbb{R}^{n})} $.
+
+Однако, помимо структуры группы это множество наделено также структурой многообразия. Действительно, с помощью тривиальной параметризации:
+\beq
+( s^{1},...,s^{n} ) \longrightarrow
+\left(
+\begin{array}{ccc}
+1 + s^{1} \partial_{1} & & 0 \\
+0 & \ddots & 1 + s^{n}\partial_{n} \\
+\end{array}
+\right),
+\eeq
+может быть установлено соответствие многообразию $ \mathbb{R}^{n} $. В этом случае трансляционная часть группы изометрии является группой Ли.
+
+С кажодой группой Ли связана алебра Ли, которая соответствует касательному пространству к группе в начале координатной системы.
+
+Преимущество теории Ли в том, что свойства групп могут быть получены изучая соответствующие алгебры, что эквивалентно изучению касательных пространств к группам Ли. В случае группы трансляции, ее Ли алгебра получается вычисление производной матрицы $ \bar{S} $ по $ s^{i} $ в точке $ s=0 $ (тка, что в $ s = (s^{1};...;s^{n}) = (0;...;0) $):
+\beq
+\left.
+\frac{\partial \bar{S} }{\partial s^{i} }
+\right| \doteqdot W_{i},
+\eeq
+где
+\beq
+W_{i} = 
+\begin{vmatrix}
+0 &  &  &  & \begin{large} 0 \end{large} \\
+ & \ddots &  &  &  \\ 
+ &  & \partial_{i} &  &  \\
+ &  &  & \ddots &  \\
+\begin{large} 0 \end{large} &  &  &  & \huge 0 \\
+\end{vmatrix} 
+\eeq
+
+В соответствии с теорией многообразий $ W_{i} $ это касательный вектор группы $ \mathrm{Trans}(\mathbb{R}^{n} ) $ в точке $ s = 0 $, а набор матриц $ \lbrace W_{i} | 1 \leq i \leq n \rbrace $ составляет базис касательного пространства группы $ \mathrm{Trans}(\mathbb{R}^{n} ) $ в $ s = 0 $.
+
+Этот объект, который имеет структуру касательного пространства, обозначается $ \mathfrak{trans }(\mathbb{R}^{n} ) $ а базисные векторы $ W_{1},...,W_{n} $ называются каноническим базисом $ \mathfrak{trans }(\mathbb{R}^{n} ) $. Любой вектор $ \mathfrak{trans }(\mathbb{R}^{n} ) $ может быть записан как линейная комбинация этих канонических базисных векторов.
+
+Можно представлять алгебру Ли $ \mathfrak{g} $ группы Ли $ \mathcal{G} $ как касательное пространство, так как они изоморфны.
+Само название "алгебра Ли" указывает, что касательное пространство в точке, в данном случае образует алгебру. Действительно, наряду с операцией сложения, на векторном пространстве определена билинейная функция $ \mathfrak{g} \times \mathfrak{g} \rightarrow \mathfrak{g} $, называемая скобкой Ли, которая кососимметрична и удовлетворяет тожеству Якоби. Если матрицы имеют обратные, то скобка Ли является просто коммутатором двух матриц:
+\beq
+\, [A,B] = AB - BA $, $ GL_{n} (\mathbb{R}) $, $ \forall A,B \in GL_{n} (\mathbb{R}).
+\eeq
+
+В частном случае трансляций, $ \mathfrak{trans} (\mathbb{R}) $ замкнута относительно коммутатора (т.е. взятие коммутатора в
+$ \mathfrak{trans} $ не выводит из $ \mathfrak{trans} $; действительно, для любых двух матриц $ W_{i} $ и $ W_{j} $, $ 1 \leq i,j \leq n $, представляющих векторы канонического базиса $ \mathfrak{trans} (\mathbb{R}^{n}) $, имеем:
+\beq
+[ W_{i}; W_{j} ] = 0_{n} \hx \in \mathfrak{trans} (\mathbb{R}^{n}).
+\eeq
+$ \mathfrak{trans} (\mathbb{R}^{n}) $ в этом случает ялвяется алгеброй.
+
+Соотношение между алгеброй Ли и соответствующей ей групой Ли устанавливается експоненциальным соотношением: каждый элемент группы может быть записан как експонента элемента из соответствующей алгебры Ли. В случае инвертируемых матриц, експоненциальное отображение обычно дается разложением експоненциальной функции в степенной ряд.
+
+В случае группы трансляции, и когда векторы выражаются в виде $ s^{i} W_{i} $, где $ W_{i} $ канонический вектор принадлежащий $ \mathfrak{trans} (\mathbb{R}^{n}) $ и $ s^{i} \in \mathbb{R} $:
+\beq
+\exp (s^{i} W_{i}) = \sum_{k=0}^{\infty }
+\frac{1}{k!} (s^{i} W_{i})^{k} = \\ I_{n} + s^{i}W_{i} + \frac{1}{2} (s^{i} W_{i})^{2} + \frac{1}{3!} ( s^{i}W_{i} )^{3} + ... , 
+\eeq
+так что:
+\beq
+\exp (s^{i} W_{i}) = 
+\left(
+\begin{array}{ccccc}
+0 & \, & \, & \emptyset & \, \\ 
+\, & \ddots & \, & \, & \, \\ 
+\, & \, & a_{i}^{i} & \, & \, \\ 
+\, & \, & \, & \ddots& \, \\ 
+\, & \emptyset & \, & \, & 0
+\end{array} 
+\right)
+\eeq
+где
+\beq
+a_{i}^{i} = \sum_{k=0}^{\infty} \frac{1}{k!}
+(s^{i} \pal_{i})^{k}
+\eeq
+
+Применяя $ \exp (W_{i}) $ в точке с координатами $ u = (u^{1}; \ldots ; u^{n}) $ в $ n-$размерном евклидовом многообразии, получим:
+\beq
+\exp (s^{i} W_{i}) u = \\
+= I_{n}u + s^{i}W_{i}u + \underbrace{\frac{1}{2} (s^{i}W_{i})^{2}u}_{=0} + \underbrace{\frac{1}{3!}(s^{i}W_{i})^{3}u}_{=0} + \ldots = \\
+= u + s^{(i)} ,
+\eeq
+где $ s^{(i)}= ( 0; \ldots ; s^{i}; \ldots; 0 ), $ и заметим, что только первые два члена разложения дают вклад в выражение.
+
+Для произвольного вектора $ V \in \mathfrak{trans} (\mathbb{R}^{n}) $:
+\beq
+V = \sum_{i=1}^{n} s^{i}W_{i} ,
+\eeq
+где $ s^{1}, \ldots, s^{n} $ являются компонентами $ V $ в каноническом базисе, имеем:
+\beq
+\exp \left\lbrace \sum_{i=1}^{n} s^{i}W_{i} \right\rbrace = \prod_{i=1}^{n} \exp (s^{i}W_{i}),
+\eeq
+так как $ [W_{i}; W_{j}] = 0_{n} $, для всех $ 1 \leq i,j \leq n $. Тогда, так как $ \pal_{i}\pal_{j}u = 0 $:
+\beq
+\exp \left\lbrace \sum_{i=1}^{n} s^{i}W_{i} \right\rbrace u = \prod_{i=1}^{n} \exp (s^{i}W_{i}) u = \\ = \prod_{i=1}^{n}
+(I_{n} + s^{i}W_{i})u = \left( I_{n} + \sum_{i=1}^{n} s^{i}W_{i} \right)u.
+\eeq
+
+В заключение,
+\beq
+\exp \left( \sum_{i=1}^{n} s^{i} W_{i} \right)u = \bar{S}u,
+\eeq
+тогда как $ \exp ( \sum_{i=1}^{n} s^{i}W_{i} ) $ и начальная матрица $ \bar{S} $ не равны. Но так как их действия на натуральные координаты $ u $ в $ \mathbb{R}^{n} $ дают тот же самый результат то можно написать:
+\beq
+\bar{S} \equiv \exp \left( \sum_{i=1}^{n} s^{i}W_{i} \right)
+\eeq
+и утверждать, что они тождественны (p 24? перевод?),.
+
+Для удобства можно заменить тожественность на равенство, и определить $ \bar{S} $ как:
+\beq
+\bar{S} = \exp \left( \sum_{i=1}^{n} s^{i} W_{i}  \right),
+\eeq
+
+и принять, что вклад первых двух членов последовательности обусловлен тем, что рассматриваемое многообразие Евклидово. Такой подход имеет практическую ценность, т.к. позволяет определить трансляции не только на евклидовых но и на более общих многообразиях. Для этого необходимо записать соотношение $ \ref{ lat_2_1_12 } $ так
+\beq \label{lat_2_2_10}
+u^{'i} = \sum_{j=1}^{n} \left( \delta_{j}^{i} + \delta_{j}^{i} \sum_{k=l}^{n}s^{l} \pal_{l}  \right)u^{j} ;
+\eeq
+В матричной записи:
+\beq \label{lat_2_2_11}
+u' = \left( I_{n} + I_{n} \sum_{l=1}^{n} s^{l} \pal_{l}  \right)u.
+\eeq
+
+Обобщение евклидовой изометрии все еще представляется матрицей 
+$ \bar{F} = F + S $, где $ F $ как оычно матричная часть, а $ S $ имеет другую форму, и является скалярной матрицей:
+\beq \label{lat_2_2_12}
+S = \left(
+\begin{array}{ccc}
+\sum_{l=1}^{n} s^{l} \pal_{l} & \, & \emptyset \\ 
+\, & \ldots & \, \\ 
+\emptyset & \, & \sum_{k=1}^{n} s^{l} \pal_{l}
+\end{array} 
+\right)
+\eeq
+
+В случае, когда $ F = I_{n} $, матрица $ \bar{S} \doteqdot I_{n} + S $ соответствует чистой трансляции. Тогда множество всех матриц $ \bar{S} $ обозначается $ Trans ( \mathbb{R}^{n} ) $, даже если $ \bar{S} $ имеет другую форму чем прежде.  Вычисляя производную от $ \bar{S} $ по $ s^{i} $ в точке $ s = 0 $ получим:
+\beq \label{lat_2_2_13}
+\left. \frac{\pal \bar{S} }{\pal s^{i} } \right|_{s=0} \doteqdot W_{i},
+\eeq
+где
+\beq \label{lat_2_2_14}
+W_{i} = \left(
+\begin{array}{ccc}
+\pal_{i} & \, & \emptyset \\ 
+\, & \ldots & \, \\ 
+\emptyset & \, & \pal_{i}
+\end{array} 
+\right)
+\eeq
+
+$ W_{i} $ касательный вектор $ Trans (\mathbb{R}^{n} ) $ в начале координат; множество $ \lbrace W_{i} | 1 \leq i \leq n $ является каноническим базисом касательного пространства $ Trans (\mathbb{R}^{n}) $ в начале координат. Это пространство, так же обозначается $ \mathfrak{trans} (\mathbb{R}^{n}) $ и имеет структуру алгебры, так как замкнуто относительно операции коммутирования:
+\beq \label{lat_2_2_15}
+\, [ W_{i}; W_{j} ] = 0_{n}, \hx
+\forall 1 \leq i,j \leq n.
+\eeq
+Заметим, что эти коммутационные соотношения такие же как прежде.
+
+Пусть $ V = \sum_{i=1}^{n} s^{i}W_{i} \hx \in \mathfrak{trans} (\mathbb{R}^{n}) $, где $ s^{1}, \ldots, s^{n} $ компоненты $ V $ в каноническом базисе $ \mathfrak{trans} (\mathbb{R}^{n}); $ тогда:
+\beq
+\exp \left( \sum_{i=1}^{n} s^{i} W_{i} \right) =
+\sum_{k=0}^{\infty} \frac{1}{k!}
+\left(
+\sum_{i=1}^{n}s^{i}W_{i}
+\right)^{k},
+\eeq
+следовательно:
+\beq \label{lat_2_2_16}
+\exp \left(
+\sum_{i=1}^{n} s^{i} W_{i}
+\right) = \\ = \left(
+\begin{array}{ccc}
+\exp (\sum_{i=1}^{n} s^{i} \pal_{i} ) & \, & \emptyset \\ 
+\, & \ddots & \, \\ 
+\emptyset & \, & \exp ( \sum^{n}_{i=1}s^{i}\pal_{i} )
+\end{array} 
+\right)
+\eeq
+
+Эта матрица не тождественна $ \bar{S} $. Тем не менее, результат ее действия на натуральные координаты $ u $ тождественен $ \bar{S}u $, так как:
+\beq
+\exp \left( \sum_{i=1}^{n} s^{i} \pal_{i}  \right)u^{i} = \\ =
+\left[
+1 + \left( \sum_{i=1}^{n} s^{i} \pal_{i} \right) + \frac{1}{2} \left( \sum_{i=1}^{n} s^{i} \pal_{i} \right)^{2} + \ldots
+\right]u^{i} = \\ = u^{i} + s^{i} + 0 + \ldots ,
+\eeq
+
+Таким образом, матрица $ S $ может быть заменена на $ \tilde{S} \doteqdot I_{n} \exp (\sum_{i=1}^{n} ) $ и $ Trans (\mathbb{R}^{n}) $ может быть определена как:
+\beq \label{lat_2_2_17}
+Trans (\mathbb{R}^{n}) = \\ =
+\left\lbrace
+\tilde{S} = I_{n} \exp \left. \left( \sum_{i=1}^{n} s^{i} \pal_{i} \right) \right| s^{i} \in \mathbb{R}, \hx 1 \leq i \leq n
+\right\rbrace
+\eeq
+
+Важно то, что $ Trans (\mathbb{R}^{n}) $ генерирует трансляции не только в $ \mathbb{R}^{n} $ но так же в любом многообразии размерности $ n $ погруженном в $ \mathbb{R}^{m}, \hx m \geq n $. Действительно, пусть $ M \subset \mathbb{R}^{m} $ является многообразием размерности $ n \leq m $, $ \mathcal{U} $ открытое множество в $ M $, $ \tilde{\mathcal{U} } $ открытое множество в $ \mathbb{R}^{m} $ и 
+\beq
+H: \tilde{\mathcal{U} } \rightarrow \mathcal{U} \subset M \\
+u \longmapsto H(u),
+\eeq
+$ u = (u^{1}; \ldots; u^{n}) $ и $ H = (h^{1}; \ldots; h^{m} $, локальная параметризация $ M $. Тогда:
+\beq
+\exp \left(
+\sum_{l=1}^{n} s^{l} \pal_{l}
+\right)h^{i}(u) = \\ = h^{i}(u) + \sum_{l=1}^{n} s_{l} \frac{\pal h^{i}(u) }{\pal u^{l} } + \frac{1}{2} \sum_{l_{1}, l_{2}=1} s^{l_{1}}s^{l_{2}} \frac{\pal_{2}h^{i}(u) }{\pal u_{l_{1}} \pal u_{l_{2}} } + \ldots \\ + 
+\frac{1}{r!} \sum_{l_{1},\ldots ,l_{r}=1 }
+\frac{\pal_{r} h^{i}(u) }{\pal u^{l_{1}} \ldots \pal u^{l_{r}} } + \ldots
+\eeq
+
+Это выражение является в точности разложением в ряд Тейлора функций $ h^{i}(u) $  в окрестности точки с натуральными координатами $ u $, при условии (provided) $ H(u+s) \in \mathcal{U} $. Таким образом:
+\beq \label{2.2.18}
+\exp \left(
+\sum_{l=1}^{n} s^{l} \pal_{l}
+\right) h^{i}(u) = h^{i}(u+s) ,
+\eeq
+матрица $ \tilde{S} $ переносит точку $ H(u) $ принадлежащую $ M $ в точку $ H(u+s) $ которая также принадлежит $ M $. Заметим, что $ \tilde{S} $ при этом остается матрицей размера $ m \times m $ а не $ n \times n $ матрицей, даже если размерность многообразия $ m \leq n $.
+
+Все эти результаты подведены и проиллюстрированы следующими определением, леммой и последующим примером.
+
+\bdft
+Пусть $ \mathbb{R}^{n} $ евклидово многообразие размерности $ n $, наделенное натуральной координатной системой $ u = (u^{1}; \ldots ; u^{n}) $. Множество
+\beqn
+Trans (\mathbb{R}^{n}) =
+\left\lbrace
+\tilde{S} = I_{n} \exp \left. \left( \sum_{l=1}^{n} s^{l} \pal_{l}  \right) \right| s^{l} \in \mathbb{R}
+\right\rbrace
+\eeq
+где
+\beqn
+\left\lbrace
+\pal_{l} = \frac{\pal }{\pal u^{l} }, \hx 1 \leq l \leq n
+\right\rbrace
+\eeq
+\edft
+называется \textit{группой трансляции} в $ \mathbb{R}^{n} $ (или группой матричных операторов представляющих трансляции в $ \mathbb{R}^{n} $). Любые елемнты этой группы действуют на точках $ \mathbb{R}^{n} $, с координатами $ u $ по правилу
+\beqn
+u \longmapsto \tilde{S}u = u + s,
+\eeq
+где $ s = ( s^{1}; \ldots ; s^{n} ) $.
+
+\btrm
+Trans $(\mathbb{R}^{n})$ является группой Ли, т.е. гладким многообразием которое также является группой, параметризованной отображением:
+\beq \label{lat_2_2_19}
+(s^{1}; \ldots ; s^{n}) \longmapsto I_{n}
+\exp \left( \sum_{l=1}^{n} s^{l} \pal_{l}  \right).
+\eeq
+Множество
+\beqn
+\mathfrak{trans} (\mathbb{R}^{n}) = \\ =
+\left\lbrace
+V = \left. \sum_{i=1}^{n} s^{i}W_{i} \right| W_{i} = I_{n} \pal_{i}, \hx 1 \leq i \leq n
+\right\rbrace
+\eeq
+имеет структуру алгебры, и называется алгеброй Ли соответствующей группы Ли $ Trans (\mathbb{R}^{n}) $. Матрицы $ W_{i} $ могут быть получены из $ \tilde{S} $ вычислением производной от $ \tilde{S} $ по $ s^{i} $ в точке $ s = 0 $:
+\beq
+W_{i} = \left. \frac{\pal S }{\pal s^{i} } \right|_{s=0}.
+\eeq
+$\mathfrak{trans}(\mathbb{R}^{n})$ является касательным пространством к $ Trans (\mathbb{R}^{n}) $ в начале координат. Множество матриц $ \lbrace W_{i} | l \leq i \leq n \rbrace $ образует базис этого пространства; это канонический базис в параметризации (\ref{lat_2_2_19}).
+
+\textit{Следствие.} Пусть $ M $ многообразие размерности $n$ погруженное в $ \mathbb{R}^{m} $, $ n \leq m $. Пусть $ \mathcal{U} \subset M $, $ \tilde{\mathcal{U} } \subset \mathbb{R}^{n} $ являются двумя открытыми множествами, и
+\beqn
+H: \tilde{\mathcal{U} } \longrightarrow \mathcal{U} \\
+u \longmapsto H(u),
+\eeq
+$ u = (u^{1}; \ldots ; u^{n}) $ и $ H = (h^{1}; \ldots ; h^{m} ) $, локальная парматеризация $ M $. Тогда, любой элемент множества
+\beqn
+Trans (M) = \left\lbrace
+\tilde{S} = I_{m} \exp \left. \left( \sum_{l=1}^{n} s^{l} \pal_{l} \right) \right| s^{l} \in \mathbb{R}
+\right\rbrace
+\eeq
+где
+\beqn
+\pal_{l} = \frac{\pal }{\pal u^{l} }, \hx 1 \leq l \leq n
+\eeq
+генерирует трансляцию $ H(u+s) $ в $ M $, где $ H(u) \in \mathcal{U} $. $ Trans (M) $ и $ Trans (\mathbb{R}^{n}) $ отличаются лишь размерностями тождественной матрицы.
+
+\textit{Замечание:} $ Trans (M) $ в действительности не имеет структуры группы, некоторые елементы этого множества выводят точки $ \mathcal{U} \subset M $ из $ \mathcal{U} $, данный случай неопределен. Этот случай не существенен пока рассматриваются только многообразия которые могут быть параметризованы взаимно-однозначным отображением $ H: \mathbb{R}^{n} \rightarrow M $. В этом случае $ Trans (M) $ является группой и называется группоя трансляции в $ M $. 
+\etrm
+
+\bexe
+Пусть $ \mathbb{S}^{2} \subset \mathbb{R}^{3} $ является двумерной сферой радиуса $ R $, параметризованной следующим отображением:
+\beqn
+(\theta, \varphi) \longmapsto ( R \sin \theta \cos \varphi; R \sin \theta \sin \varphi ; R \cos \theta ).
+\eeq
+
+Любой элемент группы трансляции на данной сфере может быть записан в вдие:
+\beqn
+\tilde{S} = I_{3} \exp ( s^{\theta } \partial_{\theta } + s^{\varphi } \pal_{\varphi } )
+\eeq
+где $ \pal_{\theta } = \frac{\pal }{\pal \theta } $ и $ \pal_{\varphi } = \frac{\pal }{\pal \varphi } $. В частном случае, когда $ s^{\varphi } = 0 $, мы имеем:
+\beqn
+\tilde{S} = I_{3} \exp
+( s^{\theta} \pal_{\theta } ) = I_{3} \sum_{k=0}^{\infty }
+\frac{(s^{\theta } \pal_{\theta} )^{k} }{k!}.
+\eeq
+
+Применяя эту матрицу к точкам $ \mathbb{S}^{2} $, например к северному полюсу $ (0;0;R) $, получим:
+\beqn
+\left(
+\begin{array}{ccc}
+\exp (s^{\theta} \pal_{\theta} ) & 0 & 0 \\ 
+0 & \exp (s^{\theta}\pal_{\theta} ) & 0 \\ 
+0 & 0 & \exp (s^{\theta} \pal_{\theta}
+\end{array} 
+\right) \times \\ \times
+\left(
+\begin{array}{c}
+R \sin \theta \cos \varphi \\ 
+R \sin \theta \sin \varphi \\ 
+R \cos \theta
+\end{array} 
+\right)_{ (\theta, \varphi ) = (0;0) } = \\ =
+\left(
+\begin{array}{c}
+0 \\ 
+0 \\ 
+R
+\end{array} 
+\right) + 
+s^{\theta }
+\left(
+\begin{array}{c}
+R \\ 
+0 \\ 
+0
+\end{array} 
+\right) + 
+\frac{(s^{\theta } )^{2} }{2!}
+\left(
+\begin{array}{c}
+0 \\ 
+0 \\ 
+-R
+\end{array} 
+\right) + \\ +
+\frac{(s^{\theta } )^{3} }{3!}
+\left(
+\begin{array}{c}
+-R \\ 
+0 \\ 
+0
+\end{array} 
+\right) + \\ +
+\frac{(s^{\theta} )^{4} }{4!}
+\left(
+\begin{array}{c}
+0 \\ 
+0 \\ 
+R
+\end{array} 
+\right) + \ldots =
+\eeq
+
+Замечаем, первые компоненты этого разложения образуют разложение синуса а третьи компоненты образуют разложение косинуса. Поэтому:
+\beqn
+\left(
+\begin{array}{ccc}
+\exp (s^{\theta} \pal_{\theta} ) & 0 & 0 \\ 
+0 & \exp (s^{\theta}\pal_{\theta} ) & 0 \\ 
+0 & 0 & \exp (s^{\theta} \pal_{\theta}
+\end{array} 
+\right) \times \\ \times
+\left(
+\begin{array}{c}
+R \sin \theta \cos \varphi \\ 
+R \sin \theta \sin \varphi \\ 
+R \cos \theta
+\end{array} 
+\right)_{ (\theta, \varphi ) = (0;0) } = \\ =
+\left(
+\begin{array}{c}
+R \sin s^{\theta} \\ 
+0 \\ 
+R \cos s^{\theta }
+\end{array} 
+\right)
+\eeq
+
+Это последнее выражение соответствует координатам точки на сфере которые лежат на меридиане. Расстояние от северного полюса равно длинне кривой на этом мередиане соединяющим полюс и эту точку
+\beqn
+\mathcal{l} = \int_{0}^{s^{\theta } } R dt = R s^{\theta }.
+\eeq
+
+\eexe
+
+\subsection{Действие однопараметрической группы трансляций на многообразии. }
+
+Концепция действия группы на векторном пространстве относительно хорошо изучена, так как она напрямую связана с теорией представлений. Тем не менее, необъодимо помнить, что действие групп не ограничено только векторными пространствами; важным приложением является случай многообразий.
+
+\bdft
+Пусть $ ( \mathcal{G}; \circ ) $ является группой, с внутренней операцией $ \circ $, и нейтральным елементом $ e $, и $ M $ - многообразие. Левое действие $ \mathcal{G} $ на $ M $ это отображение:
+\beqn
+\begin{array}{cccc}
+\my : & \mathcal{G} \times M & \longrightarrow & M \\ 
+\, & (g;p) & \longrightarrow & \my (g;p)
+\end{array} 
+\eeq
+\edft 
+которое удовлетворяет следующим условиям
+\beqn
+\my (e;p) = p, \hx \hx \hx \forall p \in M; \\
+\my (g_{2}; \my (g_{1}; p)) = \my( ( g_{2} \circ g_{1} ); p ),\\
+\forall p \in M, \hx  \forall g_{1}, g_{2} \in \mathcal{G};
+\eeq
+
+Действие группы трансляции на многообразии $ M $ определяется следующим образом:
+\bdft
+Пусть $ M \subset \mathbb{R}^{m} $ градкое $ n$-мерное многообразие параметризованное гладким отображением $ H: \mathbb{R}^{n} \rightarrow M $, $ H = (h^{1}; \ldots h^{m} ) $. Левое действие $ \my_{T} $ группы трансляции $ Trans (M) $ на $ M $ записывается так:
+\beqn
+\begin{array}{llll}
+\my_{T}: & Trans (M) \times M & \rightarrow & M \\ 
+\, & (\tilde{S}; H(u) ) & \longmapsto & \my_{T}(\tilde{S}; H(u) ) = \tilde{S} H(u),
+\end{array}  
+\eeq
+\edft
+где $ H(u) $ является вектор-столбцом составленным из $ h^{1}(u), \ldots , h^{m}(u) $. Заметим, что $ H(u) $ соответствует натуральным координатам в $ \mathbb{R}^{m} $ в точке на $ M $.
+
+\textit{Замечание:} Используя разложение Тейлора, получим:
+\beqn
+\tilde{S}H(u) = H(u+s).
+\eeq
+Мы можем записать:
+\beqn
+\tilde{S} H(u) = (H \circ T \circ H^{-1})( H(u) ),
+\eeq
+где обозначено $ T(u) = \tilde{S}u $. Действие $ Trans (M) $ на $ M $ следовательно, можно определить как:
+\beqn
+(\tilde{S}; H(u) ) \longmapsto (H \circ T \circ H^{-1})(H(\tilde{S}u),
+\eeq
+
+Строго говоря, $ Trans (M) $ не является в точности группой трансляции на многообразии $ M $, а является ее матричным представлением. Елементы этой группы могут быть также представлены $ H \circ T \circ H^{-1} $, действие которой определено выше.
+
+В теории Ли важную роль играют \textit{однопараметрические подгруппы}. Однопараметрическая подгруппа в группе Ли $ \mathcal{G} $, это гладкая кривая $ \gamma $ такая, что $ \gamma (t_{1} + t_{2}) = \gamma (t_{1}, \gamma(t_{2}) $, которая соответствует  максимальной интегральной кривой элемента ассоциированной алгебры Ли $ \mathfrak{g} $, и берет сове начало на нейтральном элемете $ e $ группы. Экспоненциальное отображение отправляет элементы $ V $(которое является алгеброй Ли $ \mathfrak{g} $), в $ \gamma_{V}(1) \in \mathcal{G} $ и $ t \mapsto \exp (tV) $ является однопараметрической подгруппой генерируемой $ V $. В случае когда рассматриваемой группой Ли является $ GL_{n}(\mathbb{R}) $ (множество всех $ n \times n $ инвертируемых матриц), эеспоненциальное отображение дается разложением по степеням $ \exp V = \sum_{k=0}^{\infty} \frac{V^{k}}{k!}$. Формальное расширение этих результатов до группы трансляции дается в следующих определениях:
+\bdft
+Однопараметрическая подгруппа в $ Trans (M) $ это отображение
+\beqn
+\begin{array}{ccc}
+\mathbb{R} & \rightarrow & Trans (M) \\ 
+t & \longmapsto & \exp (tV),
+\end{array} 
+\eeq
+где:
+\beqn
+V = \sum_{j=1}^{n} s^{j}W_{j}, \hx \mbox{где} \hx W_{j} = I_{m} \pal_{j}.
+\eeq
+При $ t = 1 $, имеем $ \exp $ так, что $ \tilde{S} $, матрица ассоциируется с трансляцией $ s $.
+\edft
+
+\bdft
+Левое действие однопараметрической подгруппы $ Trans (M) $ на точках многообразия $ M $, с координатами $ H(u) $ записывается так:
+\beqn
+( \exp (tV); H(u) ) \longmapsto \exp (tV) H(u) = H(u+st),
+\eeq
+где $ s = (s^{1}; \ldots ; s^{n}) $. Таким образом, однопараметрическая подгруппа трансляции, это кривая в $ Trans (M) $ образующая кривую в $ M $.
+\edft
+
+\subsection{Инфинитиземальные трансляции и касательное простарнство.}
+
+Пусть $ t \mapsto \exp (tV) H(u) \subset M $ кривая проходящая через точку $ H(u) $, генерируемая однопараметрической подгруппой $ t \mapsto \exp (tV) \subset Trans (M) $, $ V = \sum_{j=1}^{n} s^{j}W_{j} = I_{m} \sum_{j=1}^{n} s^{j} \pal_{j} $, на $ H(u) $. Точка, безконечно близкая к точке $ H(u) $ находится из соотношения
+\beq \label{lat_2_2_20}
+\exp (dt V) H(u) = H(u+s dt) ,
+\eeq
+
+где $ dt $ инфинитиземальный элемент $ t $. Используя разложение Тейлора, получим:
+\beq \label{lat_2_2_21a}
+H(u+sdt) \cong H(u) + \sum_{j=1}^{n} \frac{\pal H }{\pal u^{j} }(u) s^{j} dt
+\eeq
+в компонентах:
+\beq \label{lat_2_2_21b}
+h^{i}(u+sdt) \cong h^{i}(u) + \sum_{j=1}^{n} \frac{\pal h^{i} }{\pal u^{j} } (u) s^{j} dt.
+\eeq
+
+Так как $ dt $ очень мало, высшими членами можно пренебречь. Последние два выражения могут быть так же получены рассматривая експоненциальное отображение с членами только нулевого и первого порядков (членами высших порядков пренебрегая):
+\beq \label{lat_2_2_22}
+\exp (dt V) \cong I_{m} + dt V.
+\eeq
+
+Точка с координатами $ H(u+sdt) $ может рассматриватся как окончание вектора приложенного в точке с координатами $ H(u) $. Действительно, касательный вектор к кривой $ t \mapsto H(u+st) $ в точке с координатами $ H(u) $ дается выражением:
+\beq \label{lat_2_2_23a}
+v = \left. \frac{d}{dt} H(u+st) \right|_{t=0} = \sum_{j=1}^{n} \frac{\pal H }{\pal u_{j} } (u) s^{j} ;
+\eeq
+в компонентах:
+\beq \label{lat_2_2_23b}
+v^{i} = \left. \frac{d}{dt} h^{i}(u+st) \right|_{t=0} = \sum_{j=1}^{n} \frac{\pal h^{i} }{\pal u^{j} } (u) s^{j}.
+\eeq
+Умножая эти соотношения на $ dt $, получим инфинитиземальный касательный вектор в точке с координатами $ H(u) $, с тем же направлением что и $ v $:
+\beq \label{lat_2_2_24a}
+v dt = \sum_{j=1}^{n} \frac{\pal H(u) }{\pal u_{j} } (u) s^{j} dt ;
+\eeq
+в компонентах:
+\beq \label{lat_2_2_24b}
+v^{i} dt = \sum_{j=1}^{n} \frac{\pal h^{i}(u) }{\pal u^{j} } (u) s^{j} dt;
+\eeq
+
+$ v dt $ есть в точности второй член в разложении тейлора (\ref{lat_2_2_21a}).
+
+Выражение (\ref{lat_2_2_23a}), может быть переписано в виде:
+\beq \label{lat_2_2_25}
+v = \sum_{j=1}^{n} s^{j} \pal_{j} H(u) = \sum_{j=1}^{n} s^{j} W_{j} H(u),
+\eeq
+где $ W_{j} = I_{m} \pal_{j} $ паказывает что вектор лагебры Ли $ \mathfrak{trans} (M) $ генерирует вектор в касательном пространстве к $ M $ в точке с координатами $ H(u) $. В частности, любой базисный вектор $ W_{i} \in \mathfrak{trans} (M)  $ генерирует вектор:
+\beq \label{lat_2_2_26}
+w_{i} = W_{i} H(u) = \frac{\pal H }{\pal u^{i} } (u),
+\eeq
+который является $ i$-ым каноническим базисным вектором касательного к $ M $ пространства в точке с координатами $ H(u) $, при параметризации $ H $. Как любое касательное пространство к $ M $, имеет туже самую размерность, что и алгебра Ли $ \mathfrak{trans} (M) $,
+
+\end{document}
