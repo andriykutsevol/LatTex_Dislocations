@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt,twocolumn,oneside]{book}
+\usepackage{hyperref,graphicx,ps4pdf}
+\usepackage[cp1251]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsfonts,longtable}
+\usepackage{amsmath,amssymb}
+\usepackage{euscript}
+
+\PSforPDF{\usepackage{pstricks,pst-plot,pst-node,pst-tree,pst-pdf,pst-text,pstricks-add}}
+
+
+
+\raggedbottom
+\pagestyle{plain}
+\oddsidemargin=-1.2cm
+\textwidth=18.5cm
+\columnsep=0.8cm
+\topmargin=-2cm
+\textheight=26cm
+%\headsep 
+\makeindex
+
+
+
+\author{Кафедра Радиофизики.}
+\title{Конспект лекций: Аккустические поля и волны в твердых телах.\\Направление подготовки: микро- и наноэлектроника.\\ Смежные дисциплины: аккустроэлектроника, аккустооптика, физика твердото тела.}
+\date{2011}
+
+\begin{document}
+
+hello\\
+
+\PSforPDF{
+\begin{pspicture*}(-7.5,-3)(7.5,3)
+   \psaxes[labels=none](0,0)(-7,-2)(7,2)        % задаём оси
+   \psplot[linecolor=blue, linewidth=1.5pt]%    % рисуем синусоиду
+     {-7}{7}{x 0.01745329252 div sin}           % notice the RPN expression
+   \uput[45](3.1415926,0){$\pi$}                % these are the labels 
+   \uput[90](-1.570796,0){$-\pi/2$}             % \uput is a box positioned at [angle]
+   \uput[-90](1.570796,0){$\pi/2$}              % relative to (x,y) coordinate
+   \uput[-135](-3.1415926,0){$-\pi$}            % and putting { content } on the box
+   \psline[linewidth=1pt,linecolor=red,linestyle=dotted]%   % red dotted lines
+     (1.57079632,1)(1.57079632,0) 
+   \psline[linewidth=1pt,linecolor=red,linestyle=dotted]%
+     (-1.57079632,-1)(-1.57079632,0) 
+ \end{pspicture*}
+}%% End of PSforPDF.
+\end{document}
